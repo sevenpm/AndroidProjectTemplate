@@ -1,24 +1,23 @@
 buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.3'
-    }
+	repositories {
+		jcenter()
+	}
+	dependencies {
+		classpath 'com.android.tools.build:gradle:2.2.3'
+	}
 }
 apply plugin: 'android'
 
 android {
-    compileSdkVersion 'android-26'
-    buildToolsVersion '26.0.0'
-
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFile getDefaultProguardFile('proguard-android.txt')
-        }
-    }
-    lintOptions {
-        abortOnError false
-    }
+	compileSdkVersion 'android-26'
+	buildToolsVersion '26.0.1'
+	buildTypes {
+		release {
+			minifyEnabled false
+			proguardFile getDefaultProguardFile('proguard-android.txt')
+		}
+	}
+	lintOptions {
+		abortOnError false
+	}
 }
