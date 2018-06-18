@@ -3,14 +3,14 @@ buildscript {
 		jcenter()
 	}
 	dependencies {
-		classpath 'com.android.tools.build:gradle:2.2.3'
+		classpath 'com.android.tools.build:gradle:2.3.0'
 	}
 }
 apply plugin: 'android'
 
 android {
-	compileSdkVersion 'android-26'
-	buildToolsVersion '26.0.2'
+	compileSdkVersion 'android-28'
+	buildToolsVersion '28.0.0'
 	buildTypes {
 		release {
 			minifyEnabled false
